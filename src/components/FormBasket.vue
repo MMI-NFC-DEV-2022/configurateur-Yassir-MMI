@@ -26,14 +26,14 @@ const basket = ref<Basket>(props.data ?? {});
       <BasketProfil class="carousel-item w-64" v-bind="basket" id="dessus" />
     </div>
     <FormKit type="form" v-model="basket">
-      <FormKit name="semelle" label="semelle" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="empeigne" label="empeigne" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="pointe" label="pointe" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="languette" label="languette" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="bande" label="bande" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="oeillet" label="oeillets" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="lacet" label="lacets" value="#FFFFFF" type="select":options="colors" />
-      <FormKit name="trimestre" label="trimestre" value="#FFFFFF" type="select":options="colors" />
+      <FormKit name="semelle" label="semelle" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="empeigne" label="empeigne" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="pointe" label="pointe" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="languette" label="languette" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="bande" label="bande" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="oeillet" label="oeillets" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="lacet" label="lacets" value="#FFFFFF" type="radio":options="colors" />
+      <FormKit name="trimestre" label="trimestre" value="#FFFFFF" type="radio":options="colors" />
     </FormKit>
   </div>
 </template>
